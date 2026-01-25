@@ -1,3 +1,5 @@
+
+
 html, 
 body {
     margin: 0px;
@@ -790,7 +792,7 @@ body {
 
 @keyframes scrollRight {
   0% {
-    transform: translateX(-100%);
+transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
@@ -873,7 +875,6 @@ button.hamburger-menu > i.icon-close {
     .menu > ul > li > a {
         font-size: 1rem;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -914,8 +915,9 @@ button.hamburger-menu > i.icon-close {
         line-height: 2.2rem;
     }
     .header-jumbotron > p {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     }
+    
     .button {
         padding: 5px;
     }
@@ -1030,15 +1032,9 @@ button.hamburger-menu > i.icon-close {
   font-weight: bold;
   color: #333; /* Warna gelap agar kontras dengan latar abu-abu */
   text-align: center;
-  text-shadow:
-    0 0 3px rgba(255, 255, 255, 1),
-    0 0 8px rgba(255, 255, 255, 1),
-    0 0 15px rgba(235, 235, 235, 1);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 1), 0 0 15px rgba(235, 235, 235, 1);
   font-family: 'Segoe UI', sans-serif;
-  text-shadow:
-  0 0 4px #FFCE10,
-  0 0 10px #FFCE10,
-  0 0 20px #FFCE10; */
+  text-shadow: 0 0 4px #FFCE10, 0 0 10px #FFCE10, 0 0 20px #FFCE10; */
 }
 
 .backlight-text-2 {
@@ -1046,13 +1042,9 @@ button.hamburger-menu > i.icon-close {
   font-weight: bold;
   color: #333; /* Warna gelap agar kontras dengan latar abu-abu */
   text-align: center;
-  text-shadow:
-    0 0 3px rgba(255, 255, 255, 1),
-    0 0 8px rgba(255, 255, 255, 1),
-    0 0 15px rgba(235, 235, 235, 1);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 1), 0 0 15px rgba(235, 235, 235, 1);
   font-family: 'Segoe UI', sans-serif;
-  text-shadow:
-0 0 4px #00f,
+  text-shadow: 0 0 4px #00f,
   0 0 10px #0ff,
   0 0 20px #0ff;
 }
