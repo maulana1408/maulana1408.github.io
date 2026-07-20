@@ -1,4 +1,4 @@
-// Konfigurasi Navigasi & Hamburger Menu
+// Navigasi & Kontrol Menu Mobile
 const menu = document.querySelector('.menu');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const iconBars = document.querySelector('.icon-bars');
@@ -19,7 +19,6 @@ function displayMenu() {
 
 hamburgerMenu.addEventListener('click', displayMenu);
 
-// Menutup menu mobile setelah link navigasi diklik
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (menu.classList.contains('tampil')) {
@@ -28,26 +27,26 @@ navLinks.forEach(link => {
     });
 });
 
-// Toast / PopUp Notifikasi untuk Media Sosial
+// Terminal Console Toast Log untuk Link Media Sosial
 document.addEventListener('DOMContentLoaded', function () {
-    const socialLinks = document.querySelectorAll('#tentang-saya .social a');
+    const socialLinks = document.querySelectorAll('.social-hero a');
 
-    // Create popup container dinamik
+    // Buat container toast log secara dinamis
     const popup = document.createElement('div');
     popup.className = 'social-popup';
     document.body.appendChild(popup);
 
     const messageMap = {
-        'fa-linkedin-in': 'Menghubungkan ke LinkedIn...',
-        'fa-instagram': 'Membuka profil Instagram...',
-        'fa-envelope': 'Menyiapkan email klien...',
-        'fa-whatsapp': 'Mengalihkan ke WhatsApp...',
+        'fa-linkedin-in': 'EXEC: linking_external_uri --target=linkedin',
+        'fa-instagram': 'EXEC: routing_social_node --target=instagram',
+        'fa-envelope': 'EXEC: open_mail_gateway --protocol=mailto',
+        'fa-whatsapp': 'EXEC: initial_handshake --service=whatsapp',
     };
 
     socialLinks.forEach(link => {
         link.addEventListener('click', function () {
             const icon = this.querySelector('i');
-            let message = 'Membuka tautan...';
+            let message = 'EXEC: fetching_resource...';
 
             for (const cls of icon.classList) {
                 if (messageMap[cls]) {
@@ -61,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             setTimeout(() => {
                 popup.classList.remove('show');
-            }, 2000);
+            }, 2200);
         });
     });
 });
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const observerOptions = {
         root: null,
-        rootMargin: '-20% 0px -60% 0px', // Akurat mendeteksi elemen saat di-scroll
+        rootMargin: '-30% 0px -50% 0px', // Akurat mendeteksi viewport saat di-scroll
         threshold: 0
     };
 
