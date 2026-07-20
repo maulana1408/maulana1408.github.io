@@ -3,112 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiddan Maulana | Website Portfolio</title>
+    <title>Jiddan Maulana | Portofolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Space Grotesk (Cyber Tech) & JetBrains Mono (Terminal Code) -->
+    <!-- Menggunakan Font Geometris Modern Premium: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
-    <!-- Cyber Grid Background Overlay -->
-    <div class="cyber-grid"></div>
+    <!-- Latar Belakang Kotak Matriks Halus -->
+    <div class="cyber-grid-bg"></div>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="wrapper nav-container">
-            <div class="logo">
-                <span class="terminal-tag">&lt;JM /&gt;</span>
-            </div>
+    <!-- Navigasi Utama bergaya Pill Capsule seperti Gambar -->
+    <div class="nav-wrapper">
+        <nav>
+            <div class="nav-brand">JIDDAN MAULANA</div>
             <div class="menu">
                 <ul>
-                    <li><a href="#halaman-utama" class="nav-link">// beranda</a></li>
-                    <li><a href="#lomba" class="nav-link">// lomba</a></li>
-                    <li><a href="#proyek" class="nav-link">// proyek</a></li>
-                    <li><a href="#sertifikat-prestasi" class="nav-link">// sertifikat</a></li>
+                    <li><a href="#halaman-utama" class="nav-link">HOME</a></li>
+                    <li><a href="#lomba" class="nav-link">LOMBA</a></li>
+                    <li><a href="#proyek" class="nav-link">PROYEK</a></li>
+                    <li><a href="#sertifikat-prestasi" class="nav-link">SERTIFIKAT</a></li>
                 </ul>
+            </div>
+            <div class="nav-btn-right">
+                <a href="http://wa.me/628813789897" target="_blank" class="nav-action-btn">CONTACT</a>
             </div>
             <button class="hamburger-menu" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars icon-bars"></i>
                 <i class="fa-solid fa-xmark icon-close"></i>
             </button>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
-    <!-- Integrated Hero & Profile Section -->
+    <!-- Hero / Jumbotron Section terintegrasi penuh -->
     <header id="halaman-utama">
-        <div class="header-jumbotron">
-            <div class="console-badge">STATUS: ACTIVE</div>
-            <h4>HI, I'AM JIDDAN MAULANA</h4>
-            <h5 class="cyber-glitch-text">Informatics Engineering Student</h5>
-            <div class="university-tag">Faculty of Vocational - Airlangga University</div>
+        <div class="hero-container">
+            <!-- Badge Universitas bergaya Kapsul Terang -->
+            <div class="cyber-badge">D4 TEKNIK INFORMATIKA UNIVERSITAS AIRLANGGA</div>
             
-            <!-- Perkenalan Diri (Pindahan dari Tentang Saya) -->
-            <p class="hero-bio">
-                Tertarik mendalami ilmu di bidang teknologi yang terus berkembang dengan fokus pada backend architecture dan rekayasa data. Memiliki minat tinggi dalam riset multidisplin untuk menciptakan solusi teknologi yang presisi dan berdampak nyata.
+            <h4 class="hero-subtext">WELCOME TO MY SYSTEM</h4>
+            
+            <!-- Judul Utama dengan Efek Teks Besar Gradasi Biru Gelap ke Terang -->
+            <h1 class="gradient-headline">INITIALIZE</h1>
+            
+            <!-- Slogan & Profil Singkat (Gabungan Tentang Saya) -->
+            <p class="hero-description">
+                "GROWING TOGETHER FOR A BRIGHTER FUTURE" <br>
+                <span>Tertarik mendalami ilmu di bidang teknologi dengan fokus pada AI application development, rekayasa data, dan backend architecture. Memiliki minat tinggi dalam riset multidisiplin untuk menciptakan solusi digital yang presisi.</span>
             </p>
 
-            <!-- Tech Stack Badges Core -->
-            <div class="tech-command-wrapper">
-                <span class="cmd-tag"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="cmd-tag"><i class="fa-solid fa-database"></i> SQL</span>
-                <span class="cmd-tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
-                <span class="cmd-tag"><i class="fa-brands fa-figma"></i> Figma</span>
-            </div>
-            
-            <!-- Social Icons terintegrasi langsung di Hero -->
-            <div class="social-hero">
+            <!-- Tautan Media Sosial Terintegrasi Halus -->
+            <div class="social-container">
                 <a href="https://www.linkedin.com/in/jiddan-maulana-52b095308" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.instagram.com/dnnn.ars" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="mailto:jiddanmaulana23122006@gmail.com?subject=Pesan%20dari%20Website" title="Email"><i class="fa-regular fa-envelope"></i></a>
                 <a href="http://wa.me/628813789897" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
 
+            <!-- Tombol Aksi Utama Bergaya Border Transparan Bercahaya -->
             <div class="hero-actions">
-                <a href="#proyek" class="button-cyber">
-                    <span class="btn-text">EXPLORE_PROJECTS</span>
-                    <span class="btn-arrow">_&gt;</span>
-                </a>
+                <a href="#proyek" class="btn-cyber-primary">Lihat Proyek</a>
+                <a href="#lomba" class="btn-cyber-secondary">Rekam Riset</a>
             </div>
         </div>
     </header>
 
-    <!-- Lomba Section -->
+    <!-- Section Lomba -->
     <section id="lomba">
         <div class="wrapper">
-            <h4 class="cyber-header"><span class="line-number">01.</span> KOMPETISI_RISET</h4>
-            <p class="section-sub">/* Rekam jejak kompetisi riset tingkat nasional */</p>
+            <h2 class="section-title">KOMPETISI & RISET</h2>
+            <div class="title-underline"></div>
         
-            <div class="cyber-grid-layout">
-                <!-- Item 1 -->
+            <div class="showcase-grid">
+                <!-- Card 1 -->
                 <div class="cyber-card">
-                    <div class="card-corner top-left"></div>
-                    <div class="card-corner bottom-right"></div>
-                    <div class="img-container">
+                    <div class="img-box">
                         <img src="isrc2024.png" alt="ISRC 2024" />
                     </div>
-                    <div class="card-details">
-                        <span class="card-meta">#COMPETITION_01</span>
+                    <div class="card-info">
                         <h5>Gold Medal & Grand Award ISRC 2024</h5>
-                        <div class="card-action">
-                            <a href="https://www.isrc.or.id/2024/12/tim-riset-man-2-kebumen-raih-gold-dan-bronze-pada-isrc-2024.html" target="_blank" class="cyber-link">LINK_URL // <i>lihat</i></a>
+                        <div class="card-footer">
+                            <span class="meta-tag">Scientific Paper</span>
+                            <a href="https://www.isrc.or.id/2024/12/tim-riset-man-2-kebumen-raih-gold-dan-bronze-pada-isrc-2024.html" target="_blank" class="btn-card-action">Lihat Informasi</a>
                         </div>
                     </div>
                 </div>
-                <!-- Item 2 -->
+                <!-- Card 2 -->
                 <div class="cyber-card">
-                    <div class="card-corner top-left"></div>
-                    <div class="card-corner bottom-right"></div>
-                    <div class="img-container">
+                    <div class="img-box">
                         <img src="mceitb2023.png" alt="MCE ITB 2023" />
                     </div>
-                    <div class="card-details">
-                        <span class="card-meta">#COMPETITION_02</span>
+                    <div class="card-info">
                         <h5>3rd Winner MCE ITB 2023</h5>
-                        <div class="card-action">
-                            <a href="https://www.man2kebumen.sch.id/2023/11/man-2-kebumen-raih-juara-3-nasional.html" target="_blank" class="cyber-link">LINK_URL // <i>lihat</i></a>
+                        <div class="card-footer">
+                            <span class="meta-tag">Business Case</span>
+                            <a href="https://www.man2kebumen.sch.id/2023/11/man-2-kebumen-raih-juara-3-nasional.html" target="_blank" class="btn-card-action">Lihat Informasi</a>
                         </div>
                     </div>
                 </div>
@@ -116,40 +108,36 @@
         </div>
     </section>
 
-    <!-- Proyek Section -->
+    <!-- Section Proyek -->
     <section id="proyek">
         <div class="wrapper">
-            <h4 class="cyber-header"><span class="line-number">02.</span> DATA_ENGINEERING_PROYEK</h4>
-            <p class="section-sub">/* Pipeline data, preprocessing, dan repositori logika pemrograman */</p>
+            <h2 class="section-title">EKSPLORASI PROYEK</h2>
+            <div class="title-underline"></div>
 
-            <div class="cyber-grid-layout">
-                <!-- Item 1 -->
+            <div class="showcase-grid">
+                <!-- Card 1 -->
                 <div class="cyber-card">
-                    <div class="card-corner top-left"></div>
-                    <div class="card-corner bottom-right"></div>
-                    <div class="img-container">
-                        <img src="WOD.png" alt="Data Analytics">
+                    <div class="img-box">
+                        <img src="WOD.png" alt="Data Prep">
                     </div>
-                    <div class="card-details">
-                        <span class="card-meta">#DATASET_PROCESSING</span>
+                    <div class="card-info">
                         <h5>Exploring, Cleaning, and Preprocessing Data</h5>
-                        <div class="card-action">
-                            <a href="https://drive.google.com/file/d/1BcR-Vo4JKqckd-NumOCnbTDkyfanrP00/view?usp=sharing" target="_blank" class="cyber-link">DRIVE_FILE // <i>lihat</i></a>
+                        <div class="card-footer">
+                            <span class="meta-tag">Data Science</span>
+                            <a href="https://drive.google.com/file/d/1BcR-Vo4JKqckd-NumOCnbTDkyfanrP00/view?usp=sharing" target="_blank" class="btn-card-action">Lihat Dokumen</a>
                         </div>
                     </div>
                 </div>
-                <!-- Item 2 -->
+                <!-- Card 2 -->
                 <div class="cyber-card">
-                    <div class="card-corner top-left"></div>
-                    <div class="card-corner bottom-right"></div>
-                    <div class="img-container">
-                        <img src="Query dsf.png" alt="Machine Learning Model">
+                    <div class="img-box">
+                        <img src="Query dsf.png" alt="Machine Learning">
                     </div>
-                    <div class="card-details">
-                        <span class="card-meta">#ALGORITHM_EXPLORATION</span>
-                        <h5>Exploring AI Machine Learning & Data Scientist at Live Class</h5>
-                        <div class="card-action">
-                            <a href="https://drive.google.com/file/d/1oknJbyM6j3nNTuI7xEeZ3kJWsSkWzd05/view?usp=sharing" target="_blank" class="cyber-link">DRIVE_FILE // <i>lihat</i></a>
+                    <div class="card-info">
+                        <h5>Exploring AI Machine Learning & Data Scientist</h5>
+                        <div class="card-footer">
+                            <span class="meta-tag">AI Application</span>
+                            <a href="https://drive.google.com/file/d/1oknJbyM6j3nNTuI7xEeZ3kJWsSkWzd05/view?usp=sharing" target="_blank" class="btn-card-action">Lihat Dokumen</a>
                         </div>
                     </div>
                 </div>
@@ -157,15 +145,16 @@
         </div>
     </section>
 
-    <!-- Sertifikat Prestasi Section --> 
+    <!-- Section Sertifikat --> 
     <section id="sertifikat-prestasi">
         <div class="wrapper">
-            <h4 class="cyber-header"><span class="line-number">03.</span> CERTIFIED_LOGS</h4>
-            <p class="section-sub">/* Verifikasi modul kelas dan keahlian terindeks */</p>
+            <h2 class="section-title">SERTIFIKAT & LIVE CLASS</h2>
+            <div class="title-underline"></div>
         </div>
 
-        <div class="course">
-            <div class="course-slide">
+        <!-- Jalur Slider Bergerak Kanan-Kiri Halus -->
+        <div class="slider-container">
+            <div class="marquee-track">
                 <img src="6.jpg" alt="Sertifikat">
                 <img src="8.jpg" alt="Sertifikat"> 
                 <img src="7.jpg" alt="Sertifikat">
@@ -178,16 +167,16 @@
                 <img src="10.jpg" alt="Sertifikat">
                 <img src="DSF 47.0.png" alt="Sertifikat">
                 <img src="Excel.png" alt="Sertifikat">
-                <!-- Loop Duplicate -->
+                <!-- Duplicate Item -->
                 <img src="6.jpg" alt="Sertifikat">
-                <img src="8.jpg" alt="Sertifikat"> 
+                <img src="8.jpg" alt="Sertifikat">
                 <img src="7.jpg" alt="Sertifikat">
                 <img src="5.jpg" alt="Sertifikat">
             </div>
         </div>
 
-        <div class="course-reverse">
-            <div class="course-slide-reverse">
+        <div class="slider-container-reverse">
+            <div class="marquee-track-reverse">
                 <img src="one.jpg" alt="Sertifikat">
                 <img src="two.jpg" alt="Sertifikat">
                 <img src="three.jpg" alt="Sertifikat">
@@ -197,7 +186,7 @@
                 <img src="seven.jpg" alt="Sertifikat">
                 <img src="eight.jpg" alt="Sertifikat">
                 <img src="nine.jpg" alt="Sertifikat">
-                <!-- Loop Duplicate -->
+                <!-- Duplicate Item -->
                 <img src="one.jpg" alt="Sertifikat">
                 <img src="two.jpg" alt="Sertifikat">
                 <img src="three.jpg" alt="Sertifikat">
@@ -209,7 +198,7 @@
     <!-- Footer -->
     <footer>
         <div class="wrapper">
-            <p>SYS.LOC // TERMINAL_ACTIVE &copy; 2026 Portofolio Jiddan Maulana</p>
+            <p>&copy; 2026 Portofolio Jiddan Maulana. All system initialized.</p>
         </div>
     </footer>
 
