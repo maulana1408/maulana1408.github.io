@@ -3,87 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Portofolio</title>
+    <title>Jiddan Maulana | Portofolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
-  <!-- menu -->
+    <!-- Menu / Navigasi -->
     <nav>
-        <div class="wrapper">
-            <div class="logo"><img src="images/logo.png" alt=""></div>
+        <div class="wrapper nav-container">
+            <div class="logo"><img src="images/logo.png" alt="Logo"></div>
             <div class="menu">
                 <ul>
                     <li><a href="#halaman-utama" class="nav-link">Beranda</a></li>
                     <li><a href="#tentang-saya" class="nav-link">Tentang Saya</a></li>
                     <li><a href="#lomba" class="nav-link">Lomba</a></li>
                     <li><a href="#proyek" class="nav-link">Proyek</a></li>
-                    <li><a href="#sertifikat-prestasi" class="nav-link">Sertifkat Prestasi & Live Class</a></li>
+                    <li><a href="#sertifikat-prestasi" class="nav-link">Sertifikat</a></li>
                 </ul>
             </div>
-            <button class="hamburger-menu">
+            <button class="hamburger-menu" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars icon-bars"></i>
                 <i class="fa-solid fa-xmark icon-close"></i>
             </button>
         </div>
     </nav>
 
-  <!-- hero / jumbotron -->
-    <header>
-        <section id="halaman-utama"></section>
+    <!-- Hero Section -->
+    <header id="halaman-utama">
         <div class="header-opacity"></div>
         <div class="header-jumbotron">
-            <h4>Hi, I'am Jiddan Maulana</h4>
-            <h5 class="backlight-text">As a New Student of Informatics Engineering<br/>Faculty of Vocational - Airlangga University</h5>
-            <p>Interested in the multydicipline research with technology based fields | Front-End Web Developer and Data Scientist Enthusiast</p>
-            <a href="#tentang-saya"class="button button-xl" class="nav-link">Telusuri</a>
+            <h4>Hi, I'm Jiddan Maulana</h4>
+            <h5 class="backlight-text">As a Student of Informatics Engineering<br/>Faculty of Vocational - Airlangga University</h5>
+            <p>Interested in multidisciplinary research within technology-based fields | Front-End Web Developer & Data Science Enthusiast</p>
+            <a href="#tentang-saya" class="button button-xl">Telusuri <i class="fa-solid fa-arrow-down" style="margin-left: 8px;"></i></a>
         </div>
     </header>
 
-   <!-- Tentang saya -->
+    <!-- Tentang Saya -->
     <section id="tentang-saya">
         <div class="wrapper">
             <h4>Tentang <span>Saya</span></h4>
-            <p>Perkenalan singkat mengenai minat diri saya</p>
-            <div>
-                <div class="foto"><img src="profiljm.png" /></div>
-                <div class="desc"><span>
-                    <P>Tertarik mendalami ilmu di bidang teknologi yang terus berkembang.</P>
-                    <p>Memiliki minat tinggi dalam riset multidisplin untuk menciptakan solusi.</p></span>
+            <p class="section-sub">Perkenalan singkat mengenai minat diri saya</p>
+            <div class="about-content">
+                <div class="foto"><img src="profiljm.png" alt="Profil Jiddan" /></div>
+                <div class="desc">
+                    <p>Tertarik mendalami ilmu di bidang teknologi yang terus berkembang dengan fokus utama pada pengembangan aplikasi berbasis AI dan rekayasa perangkat lunak.</p>
+                    <p>Memiliki minat tinggi dalam riset multidisplin untuk menciptakan solusi digital yang berdampak nyata bagi masyarakat.</p>
                     <div class="social">
-                        <a href="https://www.linkedin.com/in/jiddan-maulana-52b095308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i class="button"></a>
-                        <a href="https://www.instagram.com/dnnn.ars?igsh=MXA4bTBiZHp2OWI0Yg=="><i class="fa-brands fa-instagram"></i class="button"></a>
-                        <a href="mailto:jiddanmaulana23122006@gmail.com?subject=Pesan%20dari%20Website&body=Saya%20ingin%20menghubungi%20Anda%20mengenai..."><i class="fa-regular fa-envelope"></i class="button"></a>
-                        <a href="http://wa.me/628813789897"><i class="fa-brands fa-whatsapp"></i class="button"></a>
+                        <a href="https://www.linkedin.com/in/jiddan-maulana-52b095308" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/dnnn.ars" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:jiddanmaulana23122006@gmail.com?subject=Pesan%20dari%20Website" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="http://wa.me/628813789897" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
- <!-- Lomba -->
+    <!-- Lomba -->
     <section id="lomba">
         <div class="wrapper">
-            <h4>Lomba</h4>
-            <p>Saya pernah mengikuti berbagai kompetisi riset seperti</p>
+            <h4>Kompetisi & <span>Riset</span></h4>
+            <p class="section-sub">Rekam jejak kompetisi tingkat nasional yang pernah saya ikuti</p>
         
             <div class="grid">
+                <!-- Item 1 -->
                 <div class="item">
-                    <div class="item-detail">
-                    <img src="isrc2024.png" />
-                        <div>
-                            <small>Gold Medal & Grand Award ISRC 2024</small>
-                            <a href="https://www.isrc.or.id/2024/12/tim-riset-man-2-kebumen-raih-gold-dan-bronze-pada-isrc-2024.html" class="button"><i class="fa-solid fa-arrow-right"></i> lihat</a>
+                    <div class="item-card shadow-effect">
+                        <div class="img-container">
+                            <img src="isrc2024.png" alt="ISRC 2024" />
+                        </div>
+                        <div class="card-details">
+                            <div class="tech-tags">
+                                <span class="tag tag-gold">Scientific Paper</span>
+                                <span class="tag">National</span>
+                            </div>
+                            <h5>Gold Medal & Grand Award ISRC 2024</h5>
+                            <div class="card-action">
+                                <a href="https://www.isrc.or.id/2024/12/tim-riset-man-2-kebumen-raih-gold-dan-bronze-pada-isrc-2024.html" target="_blank" class="btn-link">Lihat Publikasi <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Item 2 -->
                 <div class="item">
-                    <div class="item-detail">
-                    <img src="mceitb2023.png" />
-                        <div>
-                            <small>3rd Winner MCE ITB 2023</small>
-                            <a href="https://www.man2kebumen.sch.id/2023/11/man-2-kebumen-raih-juara-3-nasional.html" class="button"><i class="fa-solid fa-arrow-right"></i> lihat</a>
+                    <div class="item-card shadow-effect">
+                        <div class="img-container">
+                            <img src="mceitb2023.png" alt="MCE ITB 2023" />
+                        </div>
+                        <div class="card-details">
+                            <div class="tech-tags">
+                                <span class="tag tag-blue">Business Case</span>
+                                <span class="tag">ITB</span>
+                            </div>
+                            <h5>3rd Winner MCE ITB 2023</h5>
+                            <div class="card-action">
+                                <a href="https://www.man2kebumen.sch.id/2023/11/man-2-kebumen-raih-juara-3-nasional.html" target="_blank" class="btn-link">Lihat Publikasi <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,28 +112,48 @@
         </div>
     </section>
 
-<!-- Proyek -->
+    <!-- Proyek -->
     <section id="proyek">
         <div class="wrapper">
-            <h4>Proyek</h4>
-            <p>Saya pernah mengerjakan dan mengeksplorasi proyek seperti</p>
+            <h4>Eksplorasi <span>Proyek</span></h4>
+            <p class="section-sub">Aplikasi, analisis data, dan rekayasa logika pemrograman yang telah dikembangkan</p>
 
             <div class="grid">
+                <!-- Item 1 -->
                 <div class="item">
-                    <div class="item-detail">
-                    <img src="WOD.png">
-                        <div>
-                            <small>Exploring, Cleaning, and Preprocessing Data</small>
-                            <a href="https://drive.google.com/file/d/1BcR-Vo4JKqckd-NumOCnbTDkyfanrP00/view?usp=sharing" class="button"><i class="fa-solid fa-arrow-right"></i> lihat</a>
+                    <div class="item-card shadow-effect">
+                        <div class="img-container">
+                            <img src="WOD.png" alt="Project Data Science">
+                        </div>
+                        <div class="card-details">
+                            <div class="tech-tags">
+                                <span class="tag">Data Science</span>
+                                <span class="tag font-code">Python</span>
+                                <span class="tag font-code">SQL</span>
+                            </div>
+                            <h5>Exploring, Cleaning, and Preprocessing Data</h5>
+                            <div class="card-action">
+                                <a href="https://drive.google.com/file/d/1BcR-Vo4JKqckd-NumOCnbTDkyfanrP00/view?usp=sharing" target="_blank" class="btn-link">Lihat Dokumen <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Item 2 -->
                 <div class="item">
-                    <div class="item-detail">
-                    <img src="Query dsf.png">
-                        <div>
-                            <small>Exploring AI Machine Learning & Data Scientist at Live Class</small>
-                            <a href="https://drive.google.com/file/d/1oknJbyM6j3nNTuI7xEeZ3kJWsSkWzd05/view?usp=sharing" class="button"><i class="fa-solid fa-arrow-right"></i> lihat</a>
+                    <div class="item-card shadow-effect">
+                        <div class="img-container">
+                            <img src="Query dsf.png" alt="Project Machine Learning">
+                        </div>
+                        <div class="card-details">
+                            <div class="tech-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag font-code">Python</span>
+                                <span class="tag font-code">BigQuery</span>
+                            </div>
+                            <h5>Exploring AI Machine Learning & Data Scientist</h5>
+                            <div class="card-action">
+                                <a href="https://drive.google.com/file/d/1oknJbyM6j3nNTuI7xEeZ3kJWsSkWzd05/view?usp=sharing" target="_blank" class="btn-link">Lihat Dokumen <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,129 +161,68 @@
         </div>
     </section>
 
- <!-- Sertifikat Prestasi --> 
+    <!-- Sertifikat Prestasi --> 
     <section id="sertifikat-prestasi">
         <div class="wrapper">
-            <h4>Sertifikat Prestasi <span>& </span>Live Class</h4>
+            <h4>Sertifikat Prestasi <span>&</span> Live Class</h4>
+            <p class="section-sub">Program sertifikasi profesional dan kelas implementasi industri</p>
+        </div>
 
-            <div class="course">
-                <div class="course-slide">
-                    <img src="6.jpg" alt="gambar 1">
-                    <img src="8.jpg" alt="gambar 2"> 
-                    <img src="7.jpg" alt="gambar 3">
-                    <img src="5.jpg" alt="gambar 1">
-                    <img src="2.jpg" alt="gambar 2">
-                    <img src="3.jpg" alt="gambar 3">
-                    <img src="1.jpg" alt="gambar 3">
-                    <img src="4.jpg" alt="gambar 3">
-                    <img src="9.jpg" alt="gambar 3">
-                    <img src="10.jpg" alt="gambar 3">
-                    <img src="DSF 47.0.png" alt="gambar 1">
-                    <img src="Excel.png" alt="gambar 1">
-                    <img src="8.jpg" alt="gambar 2"> 
-                    <img src="7.jpg" alt="gambar 3">
-                    <img src="5.jpg" alt="gambar 1">
-                    <img src="2.jpg" alt="gambar 2">
-                    <img src="3.jpg" alt="gambar 3">
-                    <img src="1.jpg" alt="gambar 3">
-                    <img src="4.jpg" alt="gambar 3">
-                    <img src="9.jpg" alt="gambar 3">
-                    <img src="10.jpg" alt="gambar 3">
-                    <img src="DSF 47.0.png" alt="gambar 1">
-                    <img src="Excel.png" alt="gambar 1">
-                    <img src="6.jpg" alt="gambar 1">
-                    <img src="8.jpg" alt="gambar 2"> 
-                    <img src="7.jpg" alt="gambar 3">
-                    <img src="5.jpg" alt="gambar 1">
-                    <img src="2.jpg" alt="gambar 2">
-                    <img src="3.jpg" alt="gambar 3">
-                    <img src="1.jpg" alt="gambar 3">
-                    <img src="4.jpg" alt="gambar 3">
-                    <img src="9.jpg" alt="gambar 3">
-                    <img src="10.jpg" alt="gambar 3">
-                    <img src="DSF 47.0.png" alt="gambar 1">
-                    <img src="Excel.png" alt="gambar 1">
-                    <img src="6.jpg" alt="gambar 1">
-                    <img src="8.jpg" alt="gambar 2"> 
-                    <img src="7.jpg" alt="gambar 3">
-                    <img src="5.jpg" alt="gambar 1">
-                    <img src="2.jpg" alt="gambar 2">
-                    <img src="3.jpg" alt="gambar 3">
-                    <img src="1.jpg" alt="gambar 3">
-                    <img src="4.jpg" alt="gambar 3">
-                    <img src="9.jpg" alt="gambar 3">
-                    <img src="10.jpg" alt="gambar 3">
-                </div>
-            </div>
-
-            <div class="course-reverse">
-                <div class="course-slide-reverse">
-                    <img src="one.jpg" alt="one">
-                    <img src="two.jpg" alt="two">
-                    <img src="three.jpg" alt="three">
-                    <img src="four.jpg" alt="four">
-                    <img src="five.jpg" alt="five">
-                    <img src="six.jpg" alt="six">
-                    <img src="seven.jpg" alt="seven">
-                    <img src="eight.jpg" alt="eight">
-                    <img src="nine.jpg" alt="nine">
-                    <img src="one.jpg" alt="one">
-                    <img src="two.jpg" alt="two">
-                    <img src="three.jpg" alt="three">
-                    <img src="four.jpg" alt="four">
-                    <img src="five.jpg" alt="five">
-                    <img src="six.jpg" alt="six">
-                    <img src="seven.jpg" alt="seven">
-                    <img src="eight.jpg" alt="eight">
-                    <img src="nine.jpg" alt="nine">
-                    <img src="one.jpg" alt="one">
-                    <img src="two.jpg" alt="two">
-                    <img src="three.jpg" alt="three">
-                    <img src="four.jpg" alt="four">
-                    <img src="five.jpg" alt="five">
-                    <img src="six.jpg" alt="six">
-                    <img src="seven.jpg" alt="seven">
-                    <img src="eight.jpg" alt="eight">
-                    <img src="nine.jpg" alt="nine">
-                    <img src="one.jpg" alt="one">
-                    <img src="two.jpg" alt="two">
-                    <img src="three.jpg" alt="three">
-                    <img src="four.jpg" alt="four">
-                    <img src="five.jpg" alt="five">
-                    <img src="six.jpg" alt="six">
-                    <img src="seven.jpg" alt="seven">
-                    <img src="eight.jpg" alt="eight">
-                    <img src="nine.jpg" alt="nine">
-                </div>
+        <div class="course">
+            <div class="course-slide">
+                <!-- Row 1 Set -->
+                <img src="6.jpg" alt="Sertifikat">
+                <img src="8.jpg" alt="Sertifikat"> 
+                <img src="7.jpg" alt="Sertifikat">
+                <img src="5.jpg" alt="Sertifikat">
+                <img src="2.jpg" alt="Sertifikat">
+                <img src="3.jpg" alt="Sertifikat">
+                <img src="1.jpg" alt="Sertifikat">
+                <img src="4.jpg" alt="Sertifikat">
+                <img src="9.jpg" alt="Sertifikat">
+                <img src="10.jpg" alt="Sertifikat">
+                <img src="DSF 47.0.png" alt="Sertifikat">
+                <img src="Excel.png" alt="Sertifikat">
+                <!-- Duplicate untuk Infinite Loop Halus -->
+                <img src="6.jpg" alt="Sertifikat">
+                <img src="8.jpg" alt="Sertifikat"> 
+                <img src="7.jpg" alt="Sertifikat">
+                <img src="5.jpg" alt="Sertifikat">
+                <img src="2.jpg" alt="Sertifikat">
+                <img src="3.jpg" alt="Sertifikat">
             </div>
         </div>
-    </div>
 
+        <div class="course-reverse">
+            <div class="course-slide-reverse">
+                <!-- Row 2 Set -->
+                <img src="one.jpg" alt="Sertifikat">
+                <img src="two.jpg" alt="Sertifikat">
+                <img src="three.jpg" alt="Sertifikat">
+                <img src="four.jpg" alt="Sertifikat">
+                <img src="five.jpg" alt="Sertifikat">
+                <img src="six.jpg" alt="Sertifikat">
+                <img src="seven.jpg" alt="Sertifikat">
+                <img src="eight.jpg" alt="Sertifikat">
+                <img src="nine.jpg" alt="Sertifikat">
+                <!-- Duplicate untuk Infinite Loop Halus -->
+                <img src="one.jpg" alt="Sertifikat">
+                <img src="two.jpg" alt="Sertifikat">
+                <img src="three.jpg" alt="Sertifikat">
+                <img src="four.jpg" alt="Sertifikat">
+                <img src="five.jpg" alt="Sertifikat">
+                <img src="six.jpg" alt="Sertifikat">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="wrapper">&copy; 2025 Portofolio Jiddan Maulana</div>
+        <div class="wrapper">
+            <p>&copy; 2026 Portofolio Jiddan Maulana. Built with clean software architecture principles.</p>
+        </div>
     </footer>
-      <script src="main.js"></script>
-    <script>
-        // Mobile Menu Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                navLinks.classList.remove('active');
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
