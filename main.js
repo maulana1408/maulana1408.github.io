@@ -1,4 +1,4 @@
-// Navigasi & Kontrol Menu Mobile Hamburger
+// Navigasi Utama Hamburger Mobile Toggle
 const menu = document.querySelector('.menu');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const iconBars = document.querySelector('.icon-bars');
@@ -31,16 +31,16 @@ navLinks.forEach(link => {
 document.addEventListener('DOMContentLoaded', function () {
     const socialLinks = document.querySelectorAll('.social-container a');
 
-    // Membuat elemen popup secara dinamis
+    // Membuat elemen popup secara dinamis ke DOM body
     const popup = document.createElement('div');
     popup.className = 'social-popup';
     document.body.appendChild(popup);
 
     const messageMap = {
-        'fa-linkedin-in': 'Mengalihkan ke jaringan LinkedIn...',
-        'fa-instagram': 'Membuka galeri Instagram...',
-        'fa-envelope': 'Membuka gerbang surat elektronik...',
-        'fa-whatsapp': 'Membuka koneksi pesan WhatsApp...',
+        'fa-linkedin-in': 'Menghubungkan ke profil LinkedIn...',
+        'fa-instagram': 'Mengalihkan ke halaman Instagram...',
+        'fa-envelope': 'Membuka klien email gateway...',
+        'fa-whatsapp': 'Membuka aplikasi obrolan WhatsApp...',
     };
 
     socialLinks.forEach(link => {
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Deteksi Elemen Aktif (Scroll Highlight) dengan Intersection Observer
+// Deteksi Section Aktif di Viewport Saat Scroll (Highlight Menu)
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll("section, header");
     
     const observerOptions = {
         root: null,
-        rootMargin: '-30% 0px -50% 0px',
+        rootMargin: '-30% 0px -50% 0px', // Akurasi tinggi pendeteksian
         threshold: 0
     };
 
