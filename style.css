@@ -1,10 +1,10 @@
-/* --- Initialize System Variable (Mengikuti Gambar Umpan Balik) --- */
+/* --- System Design Variables (Premium Tech Concept) --- */
 :root {
-    --bg-main: #05070c;          /* Sangat gelap, mendekati hitam solid */
-    --bg-card: #0a0d16;          /* Abu-biru kontras untuk container */
-    --neon-blue: #2563eb;        /* Warna biru utama seperti inisialisasi */
-    --neon-glow: #3b82f6;        /* Varian terang untuk efek berpijar */
-    --border-cyber: #1e2640;     /* Garis pembatas tipis elegan */
+    --bg-main: #05070c;          /* Deep premium dark */
+    --bg-card: #0a0d16;          /* Contrasted card background */
+    --neon-blue: #2563eb;        /* Main structural Royal Blue line */
+    --neon-glow: #3b82f6;        /* Bright accent shadow glow */
+    --border-cyber: #1e2640;     /* Slate dark borders */
     --text-white: #ffffff;
     --text-gray: #8ea1bf;
     --font-primary: 'Plus Jakarta Sans', sans-serif;
@@ -36,7 +36,7 @@ body {
     padding: 0 24px;
 }
 
-/* Garis kisi-kisi abu transparan tipis di latar belakang */
+/* Subtle background grid pattern overlay */
 .cyber-grid-bg {
     position: fixed;
     top: 0;
@@ -51,7 +51,7 @@ body {
     pointer-events: none;
 }
 
-/* --- Layout Navigasi Kapsul Melengkung (Pill Shape) --- */
+/* --- Pill-Shaped Floating Navigation Layout --- */
 .nav-wrapper {
     width: 100%;
     max-width: 1200px;
@@ -69,7 +69,7 @@ nav {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--neon-blue);
-    border-radius: 50px; /* Membuat bentuk kapsul melengkung penuh */
+    border-radius: 50px; /* Perfect pill boundary */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +105,10 @@ nav {
     text-shadow: 0 0 8px var(--neon-glow);
 }
 
+.nav-btn-right {
+    display: block;
+}
+
 .nav-action-btn {
     border: 1px solid var(--neon-blue);
     color: var(--text-white);
@@ -121,7 +125,7 @@ nav {
     box-shadow: 0 0 12px var(--neon-glow);
 }
 
-/* --- Tampilan Jumbotron / Hero Terintegrasi --- */
+/* --- Integrated Hero Component Layout --- */
 header {
     height: 100vh;
     min-height: 750px;
@@ -138,7 +142,7 @@ header {
     padding: 0 24px;
 }
 
-/* Badge D4 TI Unair */
+/* Kapsul Kampus */
 .cyber-badge {
     border: 1px solid rgba(59, 130, 246, 0.4);
     background-color: rgba(37, 99, 235, 0.08);
@@ -149,18 +153,18 @@ header {
     padding: 6px 20px;
     display: inline-block;
     border-radius: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .hero-subtext {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 3px;
     color: var(--text-gray);
     margin-bottom: 8px;
 }
 
-/* Headline Utama Glitch/Glow Besar */
+/* Massive Deep-to-Light Metallic Gradient Headline */
 .gradient-headline {
     font-size: 6rem;
     font-weight: 900;
@@ -170,7 +174,7 @@ header {
     background: linear-gradient(180deg, #ffffff 30%, #1e40af 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 20px rgba(37, 99, 235, 0.35));
+    filter: drop-shadow(0 0 20px rgba(37, 99, 235, 0.3));
 }
 
 .hero-description {
@@ -192,7 +196,7 @@ header {
     line-height: 1.6;
 }
 
-/* Social Media Container */
+/* Social Media Circles */
 .social-container {
     display: flex;
     justify-content: center;
@@ -221,7 +225,7 @@ header {
     transform: translateY(-2px);
 }
 
-/* Tombol Aksi */
+/* Action Buttons with Outer Glow borders */
 .hero-actions {
     display: flex;
     justify-content: center;
@@ -261,10 +265,11 @@ header {
     color: var(--text-white);
 }
 
-/* --- Section Universal Styling --- */
+/* --- Content Sections Layout --- */
 section {
     padding: 100px 0;
     position: relative;
+    border-bottom: 1px solid rgba(30, 38, 64, 0.3);
 }
 
 .section-title {
@@ -283,7 +288,7 @@ section {
     box-shadow: 0 0 8px var(--neon-glow);
 }
 
-/* Grid Layout Modern */
+/* Modern Showcases Responsive Grid */
 .showcase-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -361,7 +366,12 @@ section {
     text-shadow: 0 0 5px var(--neon-glow);
 }
 
-/* --- Infinite Carousel Loop --- */
+/* --- Alternating Subtle Background Color Tone --- */
+#lomba { background-color: #060912; }
+#proyek { background-color: var(--bg-main); }
+#sertifikat-prestasi { background-color: #060912; }
+
+/* --- Slider Infinite Marquee --- */
 .slider-container, .slider-container-reverse {
     overflow: hidden;
     padding: 20px 0;
@@ -381,8 +391,8 @@ section {
     pointer-events: none;
 }
 
-.slider-container::before, .slider-container-reverse::before { left: 0; background: linear-gradient(to right, var(--bg-main), transparent); }
-.slider-container::after, .slider-container-reverse::after { right: 0; background: linear-gradient(to left, var(--bg-main), transparent); }
+.slider-container::before, .slider-container-reverse::before { left: 0; background: linear-gradient(to right, #060912, transparent); }
+.slider-container::after, .slider-container-reverse::after { right: 0; background: linear-gradient(to left, #060912, transparent); }
 
 .marquee-track { display: flex; animation: moveLeft 45s linear infinite; }
 .marquee-track-reverse { display: flex; animation: moveRight 45s linear infinite; }
@@ -415,7 +425,7 @@ section {
     100% { transform: translateX(0); }
 }
 
-/* --- Toast PopUp Terminal Message --- */
+/* --- Toast PopUp UI Log Message --- */
 .social-popup {
     position: fixed;
     bottom: 30px;
@@ -449,7 +459,7 @@ footer {
     font-size: 0.85rem;
 }
 
-/* --- Responsive Breakpoints --- */
+/* --- Responsive Media Queries --- */
 .hamburger-menu {
     background: none;
     border: none;
